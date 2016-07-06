@@ -1,0 +1,10 @@
+{
+	"name"        : "treinandonode",
+	"description" : "Treinando Node, com tutoriais do youtube",
+	"author"      : "Rafael Hiroshi" ,
+	"version"     : "1.0.0",
+	"private"	  : true,
+	"dependencies": {
+		"mongoose"  : "*"
+	}
+}
