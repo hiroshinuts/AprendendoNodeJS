@@ -6,6 +6,16 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var load         = require('express-load');
+var mongoose     = require('mongoose');
+
+//conexao com o mongodb
+mongoose.connect('mongodb://localhost/teste', function(err){
+	if(err){
+		console.log('Erro ao conectar no mongodb: '+err);
+	}else {
+		console.log("Conexao com o mongodb efetuada com sucesso!");
+	}
+});
 
 //var routes = require('./routes/index');
 //var users  = require('./routes/users');
